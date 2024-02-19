@@ -1,3 +1,7 @@
+:root {
+	
+}
+
 /* RESET */
 * {
 	margin: 0;
@@ -64,6 +68,16 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
+/* UTILITY */
+.style-img {
+	border-radius: 50%;
+	width: 50px;
+	/* aspect-ratio: 1/1;
+	object-fit: cover; */
+}
+
+
+
 /* MEDIA QUERY */
 @media (min-width: 768px){
 	.col-md-1 {
@@ -84,6 +98,7 @@ body {
 
 	.form {
 		height: 70px;
+		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 10px;
 	}
 }
@@ -127,9 +142,9 @@ body {
 	background-color: red;
 }
 
-.debug .col-lg-9, .col-12 {
+/* .debug .col-lg-9, .col-12 {
 	background-color: blue;
-}
+} */
 
 .debug .nav {
 	height: 70px;
