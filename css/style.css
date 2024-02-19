@@ -68,15 +68,18 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
+/* .contacts img, .nav-header img {
+	border-radius: 50%;
+	width: 50px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+} */
+
 /* UTILITY */
 .style-img {
 	border-radius: 50%;
 	width: 50px;
-	/* aspect-ratio: 1/1;
-	object-fit: cover; */
 }
-
-
 
 /* MEDIA QUERY */
 @media (min-width: 768px){
@@ -146,7 +149,7 @@ body {
 	background-color: blue;
 } */
 
-.debug .nav {
+.debug .nav-main {
 	height: 70px;
 	background-color: gray;
 }
