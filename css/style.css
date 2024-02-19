@@ -1,5 +1,5 @@
 :root {
-	
+	--background-nav: #EAEAEA;
 }
 
 /* RESET */
@@ -57,6 +57,18 @@ body {
 }
 
 /* STYLE */
+
+/* Style nav */
+[class^='nav'] {
+	background-color: var(--background-nav);
+	height: 70px;
+}
+
+.nav-main {
+	border-left: 1px solid #D8D8D8;
+}
+
+/* Style chat e Form */
 .chat {
 	overflow: auto;
 	height: calc(100% - 140px);
@@ -68,6 +80,25 @@ body {
 	border-bottom-right-radius: 10px;
 }
 
+/* Style contacts */
+.contacts {
+	background-color: white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+	align-items: center;
+}
+
+.img-contacts {
+	border-top: 1px solid #D8D8D8;
+}
+
+.style-img {
+	border-radius: 50%;
+	width: 50px;
+}
+
 /* .contacts img, .nav-header img {
 	border-radius: 50%;
 	width: 50px;
@@ -76,9 +107,14 @@ body {
 } */
 
 /* UTILITY */
-.style-img {
-	border-radius: 50%;
-	width: 50px;
+
+
+.flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
 }
 
 /* MEDIA QUERY */
@@ -103,6 +139,10 @@ body {
 		height: 70px;
 		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 10px;
+	}
+
+	.contacts {
+		border-bottom-left-radius: 10px;
 	}
 }
 
@@ -141,18 +181,20 @@ body {
 
 /* DEBUG */
 
-.debug .col-lg-3 {
+/* .debug .col-lg-3 {
 	background-color: red;
-}
+} */
 
 /* .debug .col-lg-9, .col-12 {
 	background-color: blue;
 } */
 
 .debug .nav-main {
-	height: 70px;
+	height: 70px; 
+	/*
 	background-color: gray;
-}
+	*/
+} 
 
 .debug .chat {
 	background-color: green;
