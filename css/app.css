@@ -61,7 +61,7 @@ img {
 }
 
 /* STYLE SIDEBAR */
-.header-sidebar {
+.header-sidebar, .header-chat {
     background-color: var(--background-header-sidebar);
     width: 100%;
     height: 75px;
@@ -137,6 +137,14 @@ img {
 
 #message-notifications {
     font-weight: 800;
+}
+
+/* STYLE CHAT */
+.header-chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-card-header);
 }
 
 /* UTILITY */
@@ -255,6 +263,6 @@ img {
 }
 
 /* DEBUG */
-.debug .chat {
+.debugW .chat {
     border: 5px solid orange;
 }
