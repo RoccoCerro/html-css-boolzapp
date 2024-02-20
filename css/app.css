@@ -4,6 +4,7 @@
     --padding-card-contacts: 16px 20px;
     --color-border-card: 1px solid #DAD8D6;
     --color-text-contacts: #B6B9BB;
+    --color-notifications: #A6D7F9;
 }
 
 /* FONT */
@@ -66,7 +67,8 @@ img {
 }
 
 .notifications-sidebar {
-    background-color: #A6D7F9;
+    background-color: var(--color-notifications);
+    gap: 15px;
 }
 
 .search-contacts, .contacts {
@@ -89,7 +91,7 @@ img {
     font-weight: bold;
 }
 
-.text-contacts {
+.text-contacts, .hours {
     font-size: 12px;
     color: var(--color-text-contacts);
 }
@@ -100,6 +102,24 @@ img {
     width: 50px;
     display: block;
 }
+
+.style-icon {
+    font-size: 25px;
+    padding-left: 10px;
+    color: #B1B1B1;
+}
+
+.style-bell-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 50px;
+    color: var(--color-notifications);
+    font-size: 20px;
+}
+
 
 /* MEDIA QUERY */
 @media (min-width: 768px){
@@ -160,7 +180,7 @@ img {
     }
 
     .notifications-sidebar {
-        display: block;
+        display: flex;
     }
 
     .search-contacts {
