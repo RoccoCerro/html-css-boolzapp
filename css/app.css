@@ -6,6 +6,8 @@
     --color-text-contacts: #B6B9BB;
     --color-notifications: #A6D7F9;
     --color-icon: #B1B1B1;
+    --color-message-sent: #D5FABA;
+    --color-message-received: white;
 }
 
 /* FONT */
@@ -107,7 +109,6 @@ img {
 
 .card {
     padding: var(--padding-card-contacts);
-    
 }
 
 .contacts {
@@ -140,6 +141,7 @@ img {
 }
 
 /* STYLE CHAT */
+
 .header-chat {
     display: flex;
     align-items: center;
@@ -147,8 +149,44 @@ img {
     padding: var(--padding-card-header);
 }
 
+.main-chat {
+    padding-right: 10px;
+    background-color: var(--background-header-sidebar);
+    height: calc(100% - 75px - 75px);
+}
+
 .card-chat {
     gap: 15px;
+}
+
+.container-chat {
+    background-image: url(../img/mine.jpg);
+    padding: 20px 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-chat-sent, .message-chat-received {
+    max-width: 340px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.message-chat-sent {
+    background-color: var(--color-message-sent);
+    align-self: end;
+}
+
+.message-chat-received {
+    background-color: var(--color-message-received);
+    align-self: self-start;
+}
+
+.interact-message {
+    
 }
 
 /* UTILITY */
@@ -266,8 +304,6 @@ img {
         border-right: 1px solid var(--color-border-card);
         height: calc(100% - 66px - 70px - 80px);
     }
-
-    
 }
 
 /* DEBUG */
