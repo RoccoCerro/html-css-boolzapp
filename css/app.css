@@ -1,6 +1,9 @@
 :root {
 	--background-header-sidebar: #EAEAEA;
-    --padding-card: 0 20px;
+    --padding-card-header: 0 20px;
+    --padding-card-contacts: 16px 20px;
+    --color-border-card: 1px solid #DAD8D6;
+    --color-text-contacts: #B6B9BB;
 }
 
 /* FONT */
@@ -62,6 +65,35 @@ img {
     height: 75px;
 }
 
+.notifications-sidebar {
+    background-color: #A6D7F9;
+}
+
+.search-contacts, .contacts {
+    background-color: white;
+}
+
+.card-contacts {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: var(--padding-card-contacts);
+    border-top: var(--color-border-card);
+}
+
+.name-contacts {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-contacts {
+    font-size: 12px;
+    color: var(--color-text-contacts);
+}
+
 /* UTILITY */
 .style-avatar {
     border-radius: 50%;
@@ -93,7 +125,7 @@ img {
         display: none;
     }
 
-    .name-contacts, .hours {
+    .info-contacts, .hours {
         display: none;
     }
 }
@@ -120,7 +152,7 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: var(--padding-card);
+        padding: var(--padding-card-header);
     }
 
     .sidebar .icon {
@@ -135,21 +167,20 @@ img {
         display: block;
     }
 
-    .name-contacts, .hours{
+    .info-contacts, .hours{
         display: block;
     }
 
     .card {
-        padding: var(--padding-card);
         display: flex;
         justify-content: space-between;
+        /* padding: var(--padding-card-contacts); */
     }
 
     .card-contacts {
-        display: flex; 
-        align-items: center;
+        justify-content: flex-start;
         gap: 15px;
-    }
+    } 
 }
 
 /* DEBUG */
