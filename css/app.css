@@ -110,6 +110,12 @@ img {
     
 }
 
+.contacts {
+    height: calc(100% - 66px - 70px - 80px);
+    overflow: auto;
+    scrollbar-width: none;
+}
+
 .contacts .card:not(:last-of-type) {
     border-bottom: 1px solid var(--color-border-card);
 }
@@ -240,18 +246,6 @@ img {
 }
 
 /* DEBUG */
-/* .debug .app {
-    background-color: aqua;
-} */
-
-.debug .app-content {
-    border: 2px solid red;
-}
-
-.debug .sidebar {
-    border: 3px solid yellow;
-}
-
 .debug .chat {
     border: 5px solid orange;
 }
