@@ -2,9 +2,10 @@
 	--background-header-sidebar: #EAEAEA;
     --padding-card-header: 0 20px;
     --padding-card-contacts: 16px 20px;
-    --color-border-card: 1px solid #DAD8D6;
+    --color-border-card: #DAD8D6;
     --color-text-contacts: #B6B9BB;
     --color-notifications: #A6D7F9;
+    --color-icon: #B1B1B1;
 }
 
 /* FONT */
@@ -69,10 +70,33 @@ img {
 .notifications-sidebar {
     background-color: var(--color-notifications);
     gap: 15px;
+    align-items: center;
+    padding: var(--padding-card-contacts);
 }
 
 .search-contacts, .contacts {
     background-color: white;
+}
+
+#input-search {
+    border: 0px solid #DAD8D6;
+    height: 37px;
+    padding-left: 20px;
+    width: 80%;
+    color: var(--color-icon);
+}
+
+.search-icon {
+    color: var(--color-icon);
+}
+
+.search-contacts {
+    padding: 10px 10px;
+}
+
+.container-search-contacts {
+    border: 1px solid #DAD8D6;
+    padding: var(--padding-card-header);
 }
 
 .card-contacts {
@@ -83,7 +107,11 @@ img {
 
 .card {
     padding: var(--padding-card-contacts);
-    border-top: var(--color-border-card);
+    
+}
+
+.contacts .card:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-border-card);
 }
 
 .name-contacts {
@@ -96,6 +124,7 @@ img {
     color: var(--color-text-contacts);
 }
 
+
 /* UTILITY */
 .style-avatar {
     border-radius: 50%;
@@ -106,7 +135,7 @@ img {
 .style-icon {
     font-size: 25px;
     padding-left: 10px;
-    color: #B1B1B1;
+    color: var(--color-icon);
 }
 
 .style-bell-icon {
@@ -119,7 +148,6 @@ img {
     color: var(--color-notifications);
     font-size: 20px;
 }
-
 
 /* MEDIA QUERY */
 @media (min-width: 768px){
@@ -166,6 +194,7 @@ img {
 
     .sidebar {
 		width: 370px;
+        background-color: white;
 	}
 
     .header-sidebar {
@@ -201,6 +230,13 @@ img {
         justify-content: flex-start;
         gap: 15px;
     } 
+
+    .contacts {
+        width: 350px;
+        border-right: 1px solid var(--color-border-card);
+    }
+
+    
 }
 
 /* DEBUG */
