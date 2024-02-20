@@ -1,0 +1,94 @@
+:root {
+	--background-nav: #EAEAEA;
+}
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+/* LAYOUT */
+.app {
+    height: 100vh;
+}
+
+.app-content {
+    height: 100%;
+    display: flex;
+}
+
+.sidebar {
+    display: none;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.chat {
+    flex-grow: 1;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px){
+    .sidebar {
+        display: block;
+    }
+
+}
+
+@media (min-width: 992px){
+    body {
+        background: linear-gradient(to bottom, #4D9288 0px, #4D9288 150px, #DADBD5 150px, #DADBD5 100vh);
+    }
+
+    .app {
+        padding: 36px 0;
+    }
+
+    .app-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+		width: 370px;
+	}
+}
+
+/* DEBUG */
+/* .debug .app {
+    background-color: aqua;
+} */
+
+.debug .app-content {
+    border: 2px solid red;
+}
+
+.debug .sidebar {
+    border: 3px solid yellow;
+}
+
+.debug .chat {
+    border: 5px solid orange;
+}
