@@ -235,7 +235,7 @@ img {
     height: 150px;
     width: 150px;
     background-color: white;
-    left: -150px;
+    left: -130px;
     border-radius: 20px;
     border: 2px solid var(--color-icon);
     color: var(--color-icon);
@@ -254,6 +254,10 @@ img {
         display: block;
         left: 0px;
     }
+}
+
+.curtain li:hover {
+    color: black;
 }
 
 /* UTILITY */
