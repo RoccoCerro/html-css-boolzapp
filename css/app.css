@@ -130,6 +130,14 @@ img {
     color: var(--color-text-contacts);
 }
 
+#start-notifications {
+    color: #4F7485;
+    text-decoration: underline;
+}
+
+#message-notifications {
+    font-weight: 800;
+}
 
 /* UTILITY */
 .style-avatar {
