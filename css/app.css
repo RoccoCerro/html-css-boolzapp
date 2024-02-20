@@ -76,6 +76,15 @@ img {
     padding: var(--padding-card-contacts);
 }
 
+#start-notifications {
+    color: #4F7485;
+    text-decoration: underline;
+}
+
+#message-notifications {
+    font-weight: 800;
+}
+
 .search-contacts, .contacts {
     background-color: white;
 }
@@ -101,6 +110,7 @@ img {
     padding: var(--padding-card-header);
 }
 
+/* Lista delle chat */
 .card-contacts, .card-chat {
     display: flex; 
     align-items: center;
@@ -131,16 +141,7 @@ img {
     color: var(--color-text-contacts);
 }
 
-#start-notifications {
-    color: #4F7485;
-    text-decoration: underline;
-}
-
-#message-notifications {
-    font-weight: 800;
-}
-
-/* STYLE CHAT */
+/* STYLE CHAT (chat aperta)*/
 
 .header-chat {
     display: flex;
@@ -228,7 +229,7 @@ img {
     border-radius: 10px;
 }
 
-/* STYLE CURTAIN */
+/* STYLE CURTAIN (menu a tendina) */
 .curtain {
     position: absolute;
     display: none;
@@ -400,6 +401,3 @@ img {
 }
 
 /* DEBUG */
-.debugs .footer-chat {
-    border: 5px solid orange;
-}
