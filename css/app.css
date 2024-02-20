@@ -175,7 +175,7 @@ img {
 }
 
 .message-chat-sent, .message-chat-received {
-    max-width: 340px;
+    max-width: 345px;
     border-radius: 10px;
     padding: 5px 10px;
     display: flex;
@@ -317,13 +317,14 @@ img {
     }
 
     .text-message {
-        max-width: 430px;
+        max-width: 425px;
     }
 
     .footer-chat {
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 10px;
     }
+
 }
 
 @media (min-width: 992px){
