@@ -1,5 +1,11 @@
 :root {
-	--background-nav: #EAEAEA;
+	--background-header-sidebar: #EAEAEA;
+    --padding-card: 0 20px;
+}
+
+/* FONT */
+body {
+	font-family: 'Lato', sans-serif;
 }
 
 /* RESET */
@@ -49,17 +55,52 @@ img {
     flex-grow: 1;
 }
 
+/* STYLE SIDEBAR */
+.header-sidebar {
+    background-color: var(--background-header-sidebar);
+    width: 100%;
+    height: 75px;
+}
+
+/* UTILITY */
+.style-avatar {
+    border-radius: 50%;
+    width: 50px;
+    display: block;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 768px){
     .sidebar {
         display: block;
     }
 
+    .sidebar .icon {
+        display: none;
+    }
+
+    .header-sidebar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notifications-sidebar {
+        display: none;
+    }
+
+    .search-contacts {
+        display: none;
+    }
+
+    .name-contacts, .hours {
+        display: none;
+    }
 }
 
 @media (min-width: 992px){
     body {
-        background: linear-gradient(to bottom, #4D9288 0px, #4D9288 150px, #DADBD5 150px, #DADBD5 100vh);
+        background: linear-gradient(to bottom, #4D9288 0px, #4D9288 170px, #DADBD5 170px, #DADBD5 100vh);
     }
 
     .app {
@@ -74,6 +115,41 @@ img {
     .sidebar {
 		width: 370px;
 	}
+
+    .header-sidebar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--padding-card);
+    }
+
+    .sidebar .icon {
+        display: block;
+    }
+
+    .notifications-sidebar {
+        display: block;
+    }
+
+    .search-contacts {
+        display: block;
+    }
+
+    .name-contacts, .hours{
+        display: block;
+    }
+
+    .card {
+        padding: var(--padding-card);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-contacts {
+        display: flex; 
+        align-items: center;
+        gap: 15px;
+    }
 }
 
 /* DEBUG */
