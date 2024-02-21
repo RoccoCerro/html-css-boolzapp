@@ -1,0 +1,166 @@
+/* FONT */
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+img {
+    width: 100%;
+}
+
+/* LAYOUT */
+#app {
+    height: 100vh;
+    width: 100%;
+
+    @media (min-width: 992px){
+        background: linear-gradient(to bottom, #4D9288 0px, #4D9288 170px, #DADBD5 170px, #DADBD5 100vh);
+    }    
+}
+
+#app-content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* STYLE SIDEBAR */
+.sidebar {
+    display: none;
+    width: 80px;
+    background-color: white;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* STYLE TOOLBAR */
+.toolbar {
+    width: 100%;
+    height: 70px;
+}
+
+/* STYLE NOTIFICATION */
+.notification {
+    width: 100%;
+    height: 75px;
+    display: none;
+}
+
+/* STYLE SEARCH */
+.search-contact {
+    width: 100%;
+    height: 50px;
+    display: none;
+}
+
+/* STYLE CONTACTS */
+.contacts {
+    flex-grow: 1;
+}
+
+/* STYLE TOOLBAR-CHAT */
+.toolbar-chat {
+    width: 100%;
+    height: 70px;
+}
+
+/* STYLE OPEN-CHAT */
+.open-chat {
+    flex-grow: 1;
+}
+
+/* STYLE SEND-MESSAGE */
+.send-message {
+    width: 100%;
+    height: 70px;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px){
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px){
+    #app {
+        padding: 36px 0;
+    }
+
+    #app-content {
+        width: calc(100% - 250px);
+    }
+
+    .sidebar {
+        width: 370px;
+    }
+
+    .notification, .search-contact {
+        display: block;
+    }
+}
+
+/* DEBUG */
+.debug #app-content {
+    border: 3px solid red;
+}
+
+.debug .sidebar, .debug .chat {
+    border: 2px solid green;
+}
+
+.debug .toolbar {
+    background-color: turquoise;
+}
+
+.debug .notification {
+    background-color: blue;
+}
+
+.debug .search-contact {
+    background-color: aqua;
+}
+
+.debug .contacts {
+    background-color: rgb(201, 12, 12);
+}
+
+.debug .toolbar-chat {
+    background-color: gray;
+}
+
+.debug .open-chat {
+    background-color: chartreuse;
+}
+
+.debug .send-message {
+    background-color: violet;
+}
