@@ -1,7 +1,8 @@
 :root{
     --background-sidebar: #FAFAFA;
     --background-toolbar: #EAEAEA;
-    --background-notification: #8EDAFC
+    --background-notification: #8EDAFC;
+    --color-icon-magnifying-glass: #B1B4B6;
 }
 
 /* FONT */
@@ -96,14 +97,19 @@ textarea {
             height: 100%;
             border: 1px solid rgba(128, 128, 128, 0.075);
             padding-left: 50px;
+            transition: all 1s;
         }
 
             & i {
                 position: absolute;
                 left: 25px;
                 top: 50%;
+                font-size: 14px;
                 transform: translateY(-50%);
                 opacity: 1;
+                transition: all 0.4s;
+                pointer-events: none;
+                color: var(--color-icon-magnifying-glass);
             }
 
                 & input:focus-visible {
