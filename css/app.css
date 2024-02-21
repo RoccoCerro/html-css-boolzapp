@@ -93,14 +93,19 @@ img {
 #input-search {
     border: 0px solid #DAD8D6;
     height: 37px;
-    padding-left: 20px;
-    width: 80%;
+    padding-left: 35px;
+    width: 100%;
     color: var(--color-icon);
     outline: none;
+    transition: padding 1.0s;
 }
 
 .search-icon {
     color: var(--color-icon);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .search-contacts {
@@ -110,7 +115,18 @@ img {
 .container-search-contacts {
     border: 1px solid #DAD8D6;
     padding: var(--padding-card-header);
+    position: relative;
 }
+
+/* hover search input */
+#input-search:focus-visible {
+    padding-left: 10px;
+}
+
+#input-search:focus-visible + .search-icon{
+    display: none;
+}
+/* ////////////////// */
 
 /* Lista dei contatti */
 .card-contacts, .card-chat {
@@ -236,6 +252,8 @@ img {
     border: 0px;
     color: var(--color-text-contacts);
     border-radius: 10px;
+    outline: none;
+    font-size: 20px;
 }
 
 #record i{
