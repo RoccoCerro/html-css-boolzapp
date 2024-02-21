@@ -87,14 +87,25 @@ textarea {
     height: 50px;
     display: none;
     padding: 10px 10px;
+    position: relative;
 
         & input {
             background-color: white;
             outline: none;
             width: 100%;
             height: 100%;
+            border: 1px solid rgba(128, 128, 128, 0.075);
         }
+
+            & i {
+                position: absolute;
+                left: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
 }
+
+
 
 /* STYLE CONTACTS */
 .contacts {
