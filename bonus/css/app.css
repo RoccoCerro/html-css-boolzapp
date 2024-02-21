@@ -103,11 +103,16 @@ textarea {
                 left: 25px;
                 top: 50%;
                 transform: translateY(-50%);
+                opacity: 1;
             }
 
                 & input:focus-visible {
                     padding-left: 10px;
                 }
+
+                    & input:focus-visible + i {
+                        opacity: 0;
+                    }
 }
 
 
