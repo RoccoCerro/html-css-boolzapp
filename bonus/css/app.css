@@ -108,11 +108,11 @@ textarea {
 
                 & input:focus-visible {
                     padding-left: 10px;
-                }
 
-                    & input:focus-visible + i {
+                    + i {
                         opacity: 0;
                     }
+                }
 }
 
 
