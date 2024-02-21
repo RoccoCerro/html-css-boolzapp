@@ -96,6 +96,7 @@ img {
     padding-left: 20px;
     width: 80%;
     color: var(--color-icon);
+    outline: none;
 }
 
 .search-icon {
@@ -111,7 +112,7 @@ img {
     padding: var(--padding-card-header);
 }
 
-/* Lista delle chat */
+/* Lista dei contatti */
 .card-contacts, .card-chat {
     display: flex; 
     align-items: center;
@@ -347,7 +348,7 @@ img {
     }
 
     #emoji {
-        display: block;
+        display: flex;
     }
 
     .icon-footer {
@@ -366,11 +367,12 @@ img {
     }
 
     #container-input-text {
-        width: calc(100% - 60px);
-        padding-right: 0; 
+        width: calc(100% - 60px - 60px);
+        padding-right: 0;
+        padding-left: 0; 
     }
 
-    #record {
+    /* #record {
         font-size: 25px;
         width: 60px;
         height: 57px;
@@ -379,7 +381,7 @@ img {
         align-items: center;
         color: var(--color-icon-record);
         margin-top: 12px;
-    }   
+    }    */
 }
 
 @media (min-width: 992px){
