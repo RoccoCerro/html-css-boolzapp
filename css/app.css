@@ -98,14 +98,26 @@ img {
     color: var(--color-icon);
     outline: none;
     transition: padding 1.0s;
+
+    &:focus-visible {
+        padding-left: 10px;
+
+        + .search-icon {
+            left: 0;
+            opacity: 0;
+        }
+    }
 }
 
 .search-icon {
     color: var(--color-icon);
     position: absolute;
     top: 50%;
+    left: 20px;
     transform: translateY(-50%);
     pointer-events: none;
+    transition: all 0.3s;
+    opacity: 1;
 }
 
 .search-contacts {
@@ -119,13 +131,14 @@ img {
 }
 
 /* hover search input */
-#input-search:focus-visible {
+/* #input-search:focus-visible {
     padding-left: 10px;
-}
+} */
 
-#input-search:focus-visible + .search-icon{
-    display: none;
-}
+/* #input-search:focus-visible + .search-icon{
+    left: 0;
+    opacity: 0;
+} */
 /* ////////////////// */
 
 /* Lista dei contatti */
